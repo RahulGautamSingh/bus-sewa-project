@@ -1,0 +1,40 @@
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-to-search {
+    width: 50%;
+  }
+  
+  .image-to-search img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .search-component {
+    width: 50%;
+    display: flex;
+  }
+  
+  .search-component input[type="text"],
+  .search-component input[type="date"] {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .search-component button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-component button:hover {
+    background-color: #0056b3;
+  }
+  

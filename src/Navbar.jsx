@@ -1,14 +1,19 @@
-export default function Navbar() {
-  return (
-    <nav>
-      <div className="logo-container">
-        <img src="/bus.svg" alt="" width="40" height="36" className="logo"/>
-      </div>
+import "./Navbar.css";
 
-      <div className="buttons">
-        <button type="button">Login</button>
-        <button type="button">Register</button>
+const NavigationBar = () => {
+  return (
+    <div className="navbar">
+      <div className="logo">
+        {/* Replace 'YourLogo' with your actual logo */}
+        <img src="bus.svg" alt="Logo" />
       </div>
-    </nav>
+      <div className="nav-buttons">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+      </div>
+    </div>
   );
-}
+};
+
+export default NavigationBar;
