@@ -1,6 +1,113 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
   width: 100vw;
   height: 100vh;
-  padding:0;
 }
+/* BusList */
+.bus-list-main {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height:100%;
+}
+
+.bus-list-container {
+  display: flex;
+  flex-grow:1;
+}
+
+.bus-filters {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border-right: 1px solid black; */
+  padding: 1em 0.5em;
+  background-color: #33a2ff;
+}
+
+.bus-filters select {
+  width: fit-content;
+}
+
+.bus-details {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em;
+}
+
+.bus-detail {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #a7a9ac;
+  padding: 1em;
+  margin: 0.1em;
+  cursor: pointer;
+}
+
+.bus-detail-header {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #a7a9ac;
+  /* border-: 1px solid #a7a9ac; */
+  padding: 1em;
+  margin: 0.1em;
+}
+
+.bus-detail-header p {
+  width: 20%;
+}
+
+.bus-detail p {
+  width: 20%;
+}
+
+.bus-type {
+  font-size: smaller;
+}
+
+.bus-list-pagination {
+  display: flex;
+  width: 80%;
+  flex-direction: row-reverse;
+}
+
+.pagination-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.pagination-btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+.bus-filter-pagination {
+  display: flex;
+  width: 80%;
+  flex-direction: row-reverse;
+  opacity: 0;
+}
+
+.filter-item {
+  border-top: 1px solid #a7a9ac;
+  padding: 1em;
+}
+
