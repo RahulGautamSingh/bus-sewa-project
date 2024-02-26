@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ImageSearchComponent.css";
 
 const nepalCities = [
@@ -15,6 +16,8 @@ const nepalCities = [
 ];
 
 const ImageSearchComponent = () => {
+  let navigate = useNavigate();
+
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
@@ -27,7 +30,12 @@ const ImageSearchComponent = () => {
     setDestination(e.target.value);
   };
 
+  function taketoAnotherPage() {
+    navigate("/buslist");
+  }
+
   const handleSearch = () => {
+    taketoAnotherPage();
     const apiUrl = `https://example.com/api/search?source=${source}&destination=${destination}&date=${date}`;
     console.log("API Request:", apiUrl);
   };

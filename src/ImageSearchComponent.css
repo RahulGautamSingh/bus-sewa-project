@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .image-container {
@@ -18,7 +18,8 @@
   width: 50%;
 }
 
-.search-container input,select {
+.search-container input,
+select {
   width: 70%; /* Adjust width as needed */
   margin: 10px;
   padding: 5px;
