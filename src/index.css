@@ -12,14 +12,14 @@
 /* BusList */
 .bus-list-main {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .bus-list-container {
   display: flex;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .bus-filters {
@@ -111,3 +111,149 @@
   padding: 1em;
 }
 
+// td
+.ticket-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* justify-center:center; */
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-details-container h2 {
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-center: start;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-bottom: 0.3em;
+}
+
+.all-details {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+}
+
+.left-details,
+.right-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border:1px solid red; */
+  height: 100%;
+}
+.left-details {
+  width: 40%;
+}
+
+.left-details button {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 1em;
+  margin-top:10px;
+  cursor:pointer;
+  border:none;
+}
+
+.left-details button:hover {
+  background-color: lightgreen;
+}
+
+.right-details {
+  width: 20%;
+}
+
+.passenger-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 1em;
+}
+.passenger-details-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1em;
+  width: 85%;
+}
+.passenger-details-item label {
+  font-weight: bold;
+}
+.passenger-details-item input {
+  margin: 10px 0;
+  padding: 0.4em;
+  width: 100%;
+}
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1em;
+}
+.route-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1em;
+}
+.seat-selection {
+}
+.seats {
+  display: flex;
+  gap: 2px;
+  margin: 2px;
+}
+.seats-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 334px;
+  height: 40px;
+  gap: 0.1em;
+  margin: 2px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid red;
+  color: grey;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.selected {
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+}
+
+.available {
+  border: 3px solid green;
+  color: black;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.seat-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
